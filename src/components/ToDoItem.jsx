@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import checked from "../assets/checked.png";
 import unChecked from "../assets/unChecked.png";
-import delete_icon from "../assets/delete_icon.png";
-import edit_icon from "../assets/edit_icon.png"; // Add an edit icon
+import delete_icon from "../assets/delete_icon.png"; 
+import edit_icon from "../assets/edit_icon.png";
 
 const ToDoItem = ({ task, deleteTask, toggleComplete, editTask }) => {
   const [isEditing, setIsEditing] = useState(false);
@@ -30,7 +30,7 @@ const ToDoItem = ({ task, deleteTask, toggleComplete, editTask }) => {
             className="ml-4 border rounded px-2 text-gray-700"
             value={newText}
             onChange={(e) => setNewText(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && handleEdit()} // Save on Enter
+            onKeyDown={(e) => e.key === "Enter" && handleEdit()} 
             autoFocus
           />
         ) : (

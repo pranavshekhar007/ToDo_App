@@ -13,7 +13,7 @@ const ToDoList = ({ todoList, deleteTask, toggleComplete, editTask }) => {
             task={task}
             deleteTask={deleteTask}
             toggleComplete={toggleComplete}
-            editTask={editTask} // Pass edit function
+            editTask={editTask}
           />
         ))
       )}
